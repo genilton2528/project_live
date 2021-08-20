@@ -1,0 +1,26 @@
+plugins {
+	id 'org.springframework.boot' version '2.5.4'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'com.dio'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+	useJUnitPlatform()
+}
+
+
+//dependencies {
+//	implementation 'org.springf ramework.boot:spring-boot-starter-web' implementation 'org.springframework.boot:spring-boot-starter-data-jpa developmentonly 'org.springframework.boot:spring-boot-devtools' compile group: 'com. fasterxat.jackson.dataformat', name: "jackson-dataformat-xml', version: '2.9.7 runtimeon ly 'mysqlimysql-connector-java compileonly org.projectlonbok: Lombok:1.18.18 annotationProcessor 'org.projectlombok: Lombok compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2' compile group: 'lo.springfox', name: 'springfox-swagger-ui', version: '2.9.2' compile group: 'lo.springfox', name: 'springfox-bean-validators', version: '2.9.2 compile group: 'org.hibernate compile group: 'org.hibernate . name: 'hibernate-envers', version: '5.4.17. Final' , name: 'hibernate-validator', version: '6.1.5. Final testImplementation('org.springframework.boot:spring-boot-starter-test') { exclude group: 'org.junit.vintage', module: "junit-vintage-engine } test { useJUnitPlatform{) testImplementation('org.springframework.boot:spring-boot-starter-test') { exclude group: 'org.junit.vintage', module: 'junit-vintage-engine test { useJunitPlatform()}
